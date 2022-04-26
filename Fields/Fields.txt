@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOP.Fields
+{
+    class Fields
+    {
+        
+        // "readonly" modyficator can be used with fields to prevent assignment anywhere except the constructor or setter
+
+    }
+}

@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOP.Access_Modifiers
+{
+    class Access_Modifiers
+    {
+        //C# has 5 Access Modifiers:
+        // Public
+        // Private
+        // Protected
+        // Internal
+        // Protected Internal
+
+
+
+    }
+}

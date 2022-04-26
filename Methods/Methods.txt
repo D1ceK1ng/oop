@@ -1,0 +1,62 @@
+﻿using System;
+
+namespace OOP.Object_initialiser
+{
+    class Point
+    {
+        // Example of method overloading:
+        public void Move(int x, int y) {}
+
+        public void Method(Point newLocation){}
+        
+        public void Method(Point newLocation, int speed){}
+        //NOTE: use overloading methods to improve code and make it easy to read 
+      
+    }
+
+    // USE OF PARAM MODIFIER:
+
+    class Calculator
+    {
+        
+        // Example of bad overloading:
+        
+        public int Add(int n1, int n2){}
+        public int Add(int n1, int n2, int n3){}
+        public int Add(int n1, int n2,int n3,int n4){}
+        ...
+
+        //instead use this:
+
+        public int Add(int[] numbers){}
+    }
+        var result = calculator.Add(new int[]{1,2,3,4});
+        //But, in this case u need to innitialise new and new arrays
+
+        //Better solution:
+    
+    class Calculator
+    {
+        public int Add(params int[] numbers){}
+    }
+
+    //we can call method as usual
+    var result = calculator.Add(new int[] {1,2,3,4}); 
+    
+    //or
+
+    var result = calculator.Add(1,2,3,4);
+    //this way the code is simplier and is easy to read
+
+    //USE OF REF AND OUT MODIFIERS:
+
+    //NOTE: Ref and Out modifier is a TRASH
+
+
+
+
+
+}
+
+
+
