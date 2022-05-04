@@ -1,60 +1,22 @@
 ﻿using System;
-using System.ComponentModel;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
-namespace OOP
+namespace OOP 
 {
     internal class Program
     {
-        private static OverflowPost post = null;
-
-        private static void Main()
+        public static void Main()
         {
-            
-            CreatePost();
-            Voting();
-            post.PostInfo();
+            var stack = new Stack();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
 
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
         }
-
-        public static void CreatePost()
-        {
-            Console.WriteLine("Write your post title");
-            var postTitle = Console.ReadLine();
-
-            Console.WriteLine("Write description to your post");
-            var postDescription = Console.ReadLine();
-
-            post = new OverflowPost(postTitle, postDescription);
-
-            
-        }
-
-        public static void Voting()
-        {
-            Console.WriteLine("Estimate current post:\n<+> - for up-voting\n<-> - for down-voting");
-            var voting = Console.ReadKey().Key;
-
-            while (voting != ConsoleKey.Escape)
-            {
-                switch (voting)
-                {
-                    case ConsoleKey.OemPlus:
-                        post.UpVote();
-                        break;
-                    case ConsoleKey.OemMinus:
-                        post.DownVote();
-                        break;
-                    default:
-                        Console.WriteLine("Invalid Operation, try again");
-                        break;
-                }
-
-                Console.WriteLine("To exit application press <Escape>");
-                voting = Console.ReadKey().Key;
-            }
-
-            
-        }
-    }  
+        
+    }
 }
-

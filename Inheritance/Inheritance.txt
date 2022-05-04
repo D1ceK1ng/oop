@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOP.Inheritance
+{
+    class Inheritance
+    {
+        // We inherite class by using ":" - colon
+
+        // Constructors:
+            
+            public class InheritedClass : Class
+            {
+                //To initialize constructor in one class, which inherites constructor from "Class" we use ":base(argument)"
+
+                public InheritedClass(string argument)
+                    :base(argument)
+                {
+                        
+                }
+            }
+
+    }
+}

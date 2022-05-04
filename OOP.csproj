@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Inheritance\Inherited Constructor\Car.cs" />
     <Compile Include="Constructors\Customer.cs" />
     <Compile Include="Constructors\Order.cs" />
     <Compile Include="Encapsulation\Person.cs" />
@@ -53,11 +54,13 @@
     <Compile Include="Methods\Point.cs" />
     <Compile Include="Exercises\PaymentCard.cs" />
     <Compile Include="Inheritance\PresentationObject.cs" />
-    <Compile Include="OverflowPost.cs" />
+    <Compile Include="Exercises\OverflowPost.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Stack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inheritance\Text.cs" />
     <Compile Include="Exercises\StopWatch.cs" />
+    <Compile Include="Inheritance\Inherited Constructor\Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -67,6 +70,8 @@
     <Content Include="Encapsulation\Access Modifiers\Access Modifiers.txt" />
     <Content Include="Fields\Fields.txt" />
     <Content Include="Indexer\Indexer.txt" />
+    <Content Include="Inheritance\Inheritance.txt" />
+    <Content Include="Inheritance\UpCasting and DownCasting\UpCastingDownCasting.txt" />
     <Content Include="Methods\Methods.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
